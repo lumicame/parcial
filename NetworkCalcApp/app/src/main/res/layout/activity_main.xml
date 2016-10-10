@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.labsoftware09.networkcalcapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="144dp"
+            android:text="Hello World!"
+            android:id="@+id/textView"
+            android:background="@color/colorRegistro"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="79dp"
+            android:text="0"
+            android:fontFamily="monospace"
+            android:textAlignment="textEnd"
+            android:textSize="50dp"
+            android:id="@+id/pantalla"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:text="@string/num_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/num_7"
+                    android:layout_weight="1"
+                    android:onClick="num_7"/>
+
+                <Button
+                    android:text="@string/num_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/num_8"
+                    android:layout_weight="1"
+                    android:onClick="num_8"/>
+                <Button
+                    android:text="@string/num_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/num_9"
+                    android:layout_weight="1"
+                    android:onClick="num_9"/>
+                <Button
+                    android:text="@string/division"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/division"
+                    android:layout_weight="1"
+                    android:onClick="division"/>
+                </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+                <Button
+                    android:text="@string/num_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/num_4"
+                    android:layout_weight="1"
+                    android:onClick="num_4"/>
+                <Button
+                    android:text="@string/num_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/num_5"
+                    android:layout_weight="1"
+                    android:onClick="num_5"/>
+                <Button
+                    android:text="@string/num_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/num_6"
+                    android:layout_weight="1"
+                    android:onClick="num_6"/>
+                <Button
+                    android:text="@string/multiplicacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/multiplicacion"
+                    android:layout_weight="1"
+                    android:onClick="multiplicacion"
+                    />
+                </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+                <Button
+                    android:text="@string/num_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/num_1"
+                    android:layout_weight="1"
+                    android:onClick="num_1"/>
+                <Button
+                    android:text="@string/num_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/num_2"
+                    android:layout_weight="1"
+                    android:onClick="num_2"/>
+                <Button
+                    android:text="@string/num_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/num_3"
+                    android:layout_weight="1"
+                    android:onClick="num_3"/>
+                <Button
+                    android:text="@string/menos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/menos"
+                    android:layout_weight="1"
+                    android:onClick="resta"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_weight="1">
+                <Button
+                    android:text="@string/num_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/num_0"
+                    android:layout_weight="1"
+                    android:onClick="num_0"/>
+                <Button
+                    android:text="@string/punto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/punto"
+                    android:layout_weight="1"/>
+                <Button
+                    android:text="@string/igual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/igual"
+                    android:layout_weight="1"
+                    />
+                <Button
+                    android:text="@string/mas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/mas"
+                    android:layout_weight="1"
+                    android:onClick="suma"/>
+                </TableRow>
+        </TableLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
